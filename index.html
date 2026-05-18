@@ -74,11 +74,12 @@
 
     <script>
         // 1. URL de tu Web App de Google Apps Script
-        const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxmEYrAQgIzBtCq7PD0YZjbJZTAhXw-y1SgjkKsaIEKaxQpGGZtv2s5aPgnpFN5UvyvLA/exec";
+        const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzn8dSSQHSJCV0Wje9ttZlrwr6rWUTPLjPk49mBHoPlpoFljmkV7SbPUSY8iPKAn3dxGA/exec";
 
           // 2. Capturar los parámetros de la URL de GitHub (ej: ?o=123)
+        // Cambia esto en tu index.html de GitHub:
         const urlParams = new URLSearchParams(window.location.search);
-        const objectId = urlParams.get('o');
+        const objectId = urlParams.get('o') || urlParams.get('id'); // Acepta 'o' o 'id'
 
         // 3. Construir la URL final para el iframe
         let finalUrl = APPS_SCRIPT_URL;
