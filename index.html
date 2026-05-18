@@ -70,11 +70,11 @@
     </div>
     
     <!-- El iframe cargará dinámicamente la URL con parámetros -->
-    <iframe id="appFrame" src="" onload="document.getElementById('loader').style.display='none'"></iframe>
+    <iframe id="appFrame" src="" allow="clipboard-write" onload="document.getElementById('loader').style.display='none'"></iframe>
 
     <script>
         // 1. URL de tu Web App de Google Apps Script
-        const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzn8dSSQHSJCV0Wje9ttZlrwr6rWUTPLjPk49mBHoPlpoFljmkV7SbPUSY8iPKAn3dxGA/exec";
+        const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbxze4P1y74n1KGU2yUE6OQw5T77IjM6m-zVXkErQax70Hn0N-v2zBimC70LNdsGvd02rA/exec";
 
           // 2. Capturar los parámetros de la URL de GitHub (ej: ?o=123)
         // Cambia esto en tu index.html de GitHub:
